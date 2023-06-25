@@ -1,0 +1,63 @@
+//Check Armstring for 3 digit no.
+/*import java.util.Scanner;
+class Armstrong
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter any 3 digit number to check is it Armstrong or not :");
+		int x=sc.nextInt(),count=0,d,e=1,f,sum=0;
+		for(int i=x;i>0;)
+		{
+			d=i%10;
+			i=i/10;
+			sum=sum+d*d*d;
+		}
+		if(sum==x)
+		{
+			System.out.println("Armstrong"+x);
+		}
+		else
+		{
+					System.out.println("Not Armstrong"+x);
+		}
+	}
+}*/
+// Check Armstrong for any digit no.
+import java.util.Scanner;
+class Armstrong
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter any number to check is it Armstrong or not :");
+		int x=sc.nextInt();
+		int count=0,d,e=1,f,sum=0;
+
+		for(int i=x;i>0;)
+		{
+			d=i%10;
+			i=i/10;
+			count++;
+	    }
+
+	for(int i=x;i>0;i=i/10)
+	{
+		d=i%10;
+			e=1;
+			for(int j=1;j<=count;j++)
+					e=e*d;
+		sum=sum+e;
+
+	}
+
+	if(sum==x)
+		{
+			System.out.println("Armstrong"+x);
+		}
+		else
+		{
+					System.out.println("Not Armstrong"+x);
+		}
+	}
+}
