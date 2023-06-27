@@ -1,0 +1,39 @@
+import java.util.Scanner;
+class ArmstrongInRange
+{
+	public static void main(String args[])
+	{
+		Scanner sc =new Scanner(System.in);
+		System.out.println("Enter starting range. :");
+		int x=sc.nextInt();
+		System.out.println("Enter ending range. :");
+		int y=sc.nextInt(),d,e;
+		for(int i=x;i<=y;i++)
+		{
+			int count=0;
+			int sum=0;
+			for(int j=i;j>0;j=j/10)
+			{
+				d=j%10;
+				count++;
+			}
+			for(int k=i;k>0;k=k/10)
+			{
+				d=k%10;
+				e=1;
+				for(int m=1;m<=count;m++)
+				{
+					e=e*d;
+				}
+				sum=sum+e;
+			}
+			if(i==sum)
+			{
+
+				System.out.println("Armstrong "+i);
+			}
+
+		}
+	}
+}
+
