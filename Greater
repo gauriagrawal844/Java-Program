@@ -1,0 +1,31 @@
+/*import java.util.Scanner;
+class Greater
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter two numbers");
+int x=sc.nextInt();
+int y=sc.nextInt();
+int R=(x>y)?(x):(y);
+System.out.println("Greater="+R);
+}
+}*/
+import java.util.Scanner;
+class Greater
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter two numbers");
+int x=sc.nextInt();
+int y=sc.nextInt();
+if(x>y)
+	{
+	System.out.println("Greater = "+x);
+	}
+else
+	{
+	System.out.println("Greater = "+y);
+	}
+}}
