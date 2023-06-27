@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class Height
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter height of a person");
+int height=sc.nextInt();
+double height_in_feet=height/30.48;
+double height_in_inches=height/2.54;
+
+System.out.println("Height of a person in inches ="+height_in_inches);
+System.out.println("Height of a person in feet ="+height_in_feet);
+}
+}
