@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class PrintDigit
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a any no. to print its all digit :");
+		int x=sc.nextInt(),d;
+		for(int i=x;i>0;)
+		{
+			d=i%10;
+			System.out.println(d);
+			i=i/10;
+		}
+	}
+}
