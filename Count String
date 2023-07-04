@@ -1,0 +1,43 @@
+import java.util.Scanner;
+class StringCount
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter any String :");
+		String str=sc.nextLine();
+		int Nc=0;
+		int Nw=1;
+		int Nd=0;
+		int NU=0;
+		int Nl=0;
+		int Ns=0;
+		char ch;
+		Nc=str.length();
+		for(int i=0;i<str.length();i++)
+		{
+			ch=str.charAt(i);
+		   if(ch==' ')
+		   Nw++;
+		   else if(ch>='0'&ch<='9')
+		   Nd++;
+		   else if(ch>='A'&&ch<='Z')
+		   NU++;
+		   else if(ch>='a'&&ch<='z')
+		   Nl++;
+		   else
+		   Ns++;
+
+	  	}
+
+	  System.out.println("No. of characters : "+Nc);
+	  System.out.println("No. of words : "+Nw);
+	  System.out.println("No. of digit : "+Nd);
+	  System.out.println("No. of Upper Case Alphabet : "+NU);
+	  System.out.println("No. of Lower Case Alphbet : "+Nl);
+	  System.out.println("No. of Special characters : "+Ns);
+  }
+}
+
+
+
