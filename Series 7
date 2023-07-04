@@ -1,0 +1,34 @@
+import java.util.Scanner;
+class Series7
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter value of n :");
+		int n=sc.nextInt();
+		System.out.println("Enter value of x :");
+		int x=sc.nextInt();
+		double sum=0;
+		for (int i=1;i<=n;i++)
+		{
+			double e=1;
+			for(int j=1;j<=i;j++)
+			{
+				e=e*x;
+			}
+			int m=1;
+			for(int k=1;k<=i;k++)
+			{
+				m=m*k;
+			}
+
+			if(i%2==0)
+				sum=sum-e/m;
+			else
+				sum=sum+e/m;
+
+		}
+		System.out.println(sum);
+	}
+}
+
