@@ -1,0 +1,31 @@
+/*import java.util.Scanner;
+class Teenager
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter age");
+int age=sc.nextInt();
+String R=((age>=13)&&(age<=19))?("Teenager"):("Not Teenager");
+System.out.println("Result="+R);
+}
+}*/
+
+import java.util.Scanner;
+class Teenager
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter age");
+int age=sc.nextInt();
+if(age>=13&&age<=19)
+	{
+	System.out.println("Teenager");
+	}
+else
+	{
+	System.out.println("Not Teenager");
+	}
+}
+}
