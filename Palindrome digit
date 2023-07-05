@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class PalindromeDigit
+{
+	public static void main(String args[])
+	{
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter any no. to check is it Palindrome or not :");
+		int x=sc.nextInt(),d,rev=0;
+		for(int i=x;i>0;)
+		{
+			d=i%10;
+			rev=rev*10+d;
+			i=i/10;
+		}
+		System.out.println(rev);
+		if(x==rev)
+		{
+			System.out.println("Palindrome");
+		}
+		else
+		{
+			System.out.println("Not Palindrome");
+		}
+	}
+}
