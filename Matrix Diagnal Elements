@@ -1,0 +1,45 @@
+//Diagonal Matrix elements of a matrix.
+
+import java.util.*;
+class MatrixDiagonalElements
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter no. of rows :");
+		int r=sc.nextInt();
+		System.out.println("Enter no. of columns :");
+		int c=sc.nextInt();
+		int a[][]=new int[r][c];
+		System.out.println("Enter "+r*c+" Elements :");
+		for(int i=0;i<r;i++)
+		{
+			for(int j=0;j<c;j++)
+			{
+				a[i][j]=sc.nextInt();
+			}
+		}
+		for(int i=0;i<r;i++)
+		{
+			for(int j=0;j<c;j++)
+			{
+				int m=r-1;
+				//int n=i+j;
+				if((i==j)||((i+j==m)))
+				{
+					System.out.print(a[i][j]);
+				}
+				else
+				{
+					System.out.print(" ");
+				}
+
+			}
+			System.out.println();
+		}
+	}
+}
+
+
+
+
