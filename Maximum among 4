@@ -1,0 +1,76 @@
+/*import java.util.Scanner;
+class MaximumAmong4
+
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter four numbers");
+int w=sc.nextInt();
+int x=sc.nextInt();
+int y=sc.nextInt();
+int z=sc.nextInt();
+
+if((w>x)&&(w>y))
+{
+	if(w>z)
+	{
+		System.out.println("Maximum="+w);
+	}
+	else
+	{
+		  System.out.println("Maximum="+z);
+	 }
+}
+ else if((x>w)&&(x>y))
+	{
+	   if(x>z)
+	   	{
+			System.out.println("Maximum="+x);
+		 }
+		else
+		 {
+			System.out.println("Maximum="+z);
+		 }
+	 }
+else if((y>w)&&(y>x))
+	 	{
+	 	   if(y>z)
+	 	   	{
+	 			System.out.println("Maximum="+y);
+	 		 }
+	 		else
+	 		 {
+	 			System.out.println("Maximum="+z);
+	 		 }
+	 }
+else if((z>w)&&(z>x))
+	 	{
+	 	   if(z>y)
+	 	   	{
+	 			System.out.println("Maximum="+z);
+	 		 }
+	 		else
+	 		 {
+	 			System.out.println("Maximum="+y);
+	 		 }
+	 }
+
+}
+}*/
+import java.util.Scanner;
+class MaximumAmong4
+
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter four numbers");
+int w=sc.nextInt();
+int x=sc.nextInt();
+int y=sc.nextInt();
+int z=sc.nextInt();
+int M=((w>x)&&(w>y))?((w>z)?w:z):(((x>w)&&(x>y))?((x>z)?x:z):(((y>w)&&(y>x))?((y>z)?y:z):(((z>w)&&(z>x))?((z>y)?z:y):0)));
+System.out.println("Maximum ="+M);
+}
+}
