@@ -1,0 +1,301 @@
+//Wap tp print the menu for a hotel.
+/*import java.util.Scanner;
+class Menu1
+
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter any no. from menu(1 to 4): ");
+int n=sc.nextInt();
+if(n==1)
+{
+	System.out.println("Breakfast");
+	System.out.println("Enter item from the following :");
+    String str=sc.next();
+    char ch=str.charAt(0);
+
+	if(ch=='a')
+	{
+		System.out.println("Kachori=15");
+	}
+	if(ch=='b')
+	{
+		System.out.println("Khasta=15");
+	}
+	if(ch=='c')
+	{
+		System.out.println("Sandwich=20");
+	}
+	if(ch=='d')
+	{
+		System.out.println("Poha=30");
+	}
+	else
+	{
+			System.out.println("Enter vaild no. from list");
+	}
+
+}
+
+else if(n==2)
+{
+	System.out.println("Snacks");
+	System.out.println("Enter item from the following :");
+	String str=sc.next();
+    char ch=str.charAt(0);
+
+	if(ch=='a')
+	{
+		System.out.println("Pakoda=30");
+	}
+	if(ch=='b')
+	{
+		System.out.println("Samosa=15");
+	}
+	if(ch=='c')
+	{
+		System.out.println("Spring roll=50");
+	}
+	if(ch=='d')
+	{
+		System.out.println("Momos=30");
+	}
+	else
+	{
+		System.out.println("Enter vaild no. from list");
+	}
+}
+else if(n==3)
+{
+	System.out.println("Main Course");
+	System.out.println("Enter item from the following :");
+	String str=sc.next();
+    char ch=str.charAt(0);
+
+	if(ch=='a')
+	{
+		System.out.println("Chappati and Chilli Panner=150");
+	}
+	if(ch=='b')
+	{
+		System.out.println("Naan and Butter Panner=200");
+	}
+	if(ch=='c')
+	{
+		System.out.println("Chole Bhature=100");
+	}
+	if(ch=='d')
+	{
+		System.out.println("Dosa Sambhar=150");
+	}
+	else
+	{
+		System.out.println("Enter vaild no. from list");
+	}
+}
+
+else if(n==4)
+{
+	System.out.println("Drinks");
+	System.out.println("Enter item from the following :");
+	String str=sc.next();
+    char ch=str.charAt(0);
+
+	if(ch=='a')
+	{
+		System.out.println("Cold Drink=30");
+	}
+	if(ch=='b')
+	{
+		System.out.println("Cold Coffee=100");
+	}
+	if(ch=='c')
+	{
+		System.out.println("Oreo Shake=150");
+	}
+	if(ch=='d')
+	{
+		System.out.println("Kitkat Shake=150");
+	}
+	if(ch=='e')
+	{
+		System.out.println("Mojito=90");
+	}
+	else
+	{
+		System.out.println("Enter vaild no. from list");
+	}
+}
+else
+{
+	System.out.println("Enter valid food type from menu.");
+}
+
+}
+}*/
+
+import java.util.Scanner;
+class Menu1
+
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter any no. from menu(1 to 4) : ");
+int n=sc.nextInt();
+switch(n)
+ {
+	case(1):
+	{
+		System.out.println("Breakfast");
+		System.out.println("Enter item from this section:");
+		String str=sc.next();
+		char ch=str.charAt(0);
+		switch(ch)
+		{
+			case('a'):
+				{
+					System.out.println("Kachori=15");
+				}
+				break;
+				case('b'):
+				{
+					System.out.println("Khasta=15");
+				}
+				break;
+					case('c'):
+					{
+						System.out.println("Sandwich=20");
+					}
+					break;
+					case('d'):
+					{
+						System.out.println("Poha=30");
+					}
+					break;
+					default:
+					{
+							System.out.println("Enter vaild no. from list");
+				}
+			}
+		}
+	break;
+	case(2):
+		{
+			System.out.println("Snacks");
+			System.out.println("Enter item from this section:");
+			String str=sc.next();
+			char ch=str.charAt(0);;
+			switch(ch)
+			{
+				case('a'):
+					{
+						System.out.println("Pakoda=30");
+					}
+					break;
+					case('b'):
+					{
+						System.out.println("Samosa=15");
+					}
+					break;
+						case('c'):
+						{
+							System.out.println("Spring roll=50");
+						}
+						break;
+						case('d'):
+						{
+							System.out.println("Momos=30");
+						}
+						break;
+						default:
+						{
+								System.out.println("Enter vaild no. from list");
+					}
+				}
+			}
+	break;
+	case(3):
+	{
+		System.out.println("Main Course");
+		System.out.println("Enter item from this section:");
+		String str=sc.next();
+		char ch=str.charAt(0);;
+		switch(ch)
+		{
+			case('a'):
+				{
+					System.out.println("Chappati and Chilli Panner=150");
+				}
+				break;
+				case('b'):
+				{
+					System.out.println("Naan and Butter Panner=200");
+				}
+				break;
+					case('c'):
+					{
+						System.out.println("Chole Bhature=100");
+					}
+					break;
+					case('d'):
+					{
+						System.out.println("Dosa Sambhar=150");
+					}
+					break;
+					default:
+					{
+							System.out.println("Enter vaild no. from list");
+				}
+			}
+		}
+	break;
+	case(4):
+		{
+			System.out.println("Drinks");
+			System.out.println("Enter item from this section:");
+			String str=sc.next();
+			char ch=str.charAt(0);;
+			switch(ch)
+			{
+				case('a'):
+					{
+						System.out.println("Cold Drink=30");
+					}
+					break;
+					case('b'):
+					{
+						System.out.println("Cold Coffee=100");
+					}
+					break;
+					case('c'):
+						{
+							System.out.println("Oreo Shake=150");
+						}
+						break;
+					case('d'):
+						{
+							System.out.println("Kitkat Shake=150");
+						}
+						break;
+					case('e'):
+						{
+							System.out.println("Mojito=90");
+						}
+						break;
+					default:
+						{
+								System.out.println("Enter vaild no. from list");
+					}
+				}
+			}
+	break;
+
+	default:
+	{
+	System.out.println("Enter a vaild number from the menu(1 to 5).");
+    }
+ }
+}
+}
