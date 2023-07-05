@@ -1,0 +1,86 @@
+/*omport java.util.*;
+class DeleteElementInArray
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the length of array");
+		int l=sc.nextInt();
+		int a[]=new int[l];
+		System.out.println("Enter elements in array :");
+		for(int i=0;i<a.length;i++)
+		{
+			a[i]=sc.nextInt();
+		}
+		System.out.println("Orignal Array :");
+		for(int i=0;i<a.length;i++)
+		{
+			System.out.print(a[i]+" ");
+		}
+		System.out.println();
+		System.out.println("Enter the index value to delete :");
+		int index=sc.nextInt();
+			for(int i=index;i<a.length-1;i++)
+			{
+				a[i]=a[i+1];
+			}
+
+		for(int i=0;i<a.length-1;i++)
+		{
+			System.out.print(a[i]+" ");
+		}
+	}
+}	*/
+
+import java.util.*;
+class DeleteElementInArray
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the length of array");
+		int l=sc.nextInt();
+		int a[]=new int[l];
+		System.out.println("Enter elements in array :");
+		for(int i=0;i<a.length;i++)
+		{
+			a[i]=sc.nextInt();
+		}
+		System.out.println("Orignal Array :");
+		for(int i=0;i<a.length;i++)
+		{
+			System.out.print(a[i]+" ");
+		}
+		System.out.println();
+		System.out.println("Enter the any value to delete :");
+		int x=sc.nextInt();
+
+
+		int index = -1;
+		for(int i=0;i<a.length;i++)
+		{
+			if(a[i]==x)
+			  index=i;
+	    }
+		if(index<0)
+		{
+			System.out.println("Enter valid value :");
+		}
+		else
+		{
+			for(int i=index;i<a.length-1;i++)
+			{
+				a[i]=a[i+1];
+			}
+	  	}
+		for(int i=0;i<a.length-1;i++)
+		{
+			System.out.print(a[i]+" ");
+		}
+	}
+}
+
+
+
+
+
