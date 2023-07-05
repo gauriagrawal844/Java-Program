@@ -1,0 +1,82 @@
+/*import java.util.Scanner;
+class Menu
+
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter any no. from menu(1 to 5): ");
+int n=sc.nextInt();
+if(n==1)
+{
+	System.out.println("Samosa=15");
+}
+
+else if(n==2)
+	{
+		System.out.println("Kachori=15");
+	}
+else if(n==3)
+		{
+			System.out.println("Lassi=20");
+	}
+else if(n==4)
+		{
+			System.out.println("Laddu=10");
+	}
+else if(n==5)
+		{
+			System.out.println("Tikki=25");
+	}
+
+else
+{
+	System.out.println("Enter a vaild number from the menu(1 to 5).");
+}
+
+}
+}*/
+
+import java.util.Scanner;
+class Menu
+
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter any no. from menu(1 to 5) : ");
+int n=sc.nextInt();
+switch(n)
+{
+	case(1):
+	{
+	System.out.println("Samosa=15");
+	}
+	break;
+	case(2):
+	{
+		System.out.println("Kachori=15");
+	}
+	break;
+	case(3):
+		{
+			System.out.println("Lassi=20");
+	}
+	break;
+	case(4):
+		{
+			System.out.println("Laddu=10");
+	}
+	break;
+	case(5):
+		{
+			System.out.println("Tikki=25");
+	}
+	break;
+	default:
+	{
+	System.out.println("Enter a vaild number from the menu(1 to 5).");
+	}
+}
+}
+}
