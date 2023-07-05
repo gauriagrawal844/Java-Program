@@ -1,0 +1,33 @@
+import java.util.Scanner;
+class Marks1
+
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter total cost : ");
+int Marks=sc.nextInt();
+if(Marks>=0&&Marks<33)
+{
+	System.out.println("F");
+}
+else if(Marks>=33&&Marks<45)
+{
+	System.out.println("III division");
+}
+
+else if(Marks>=45&&Marks<60)
+	{
+		System.out.println("II division");
+	}
+else if(Marks>=60&&Marks<=100)
+		{
+			System.out.println("I division");
+	}
+else
+{
+	System.out.println("Invalid number");
+}
+
+}
+}
