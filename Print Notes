@@ -1,0 +1,114 @@
+// WAP to print the total no. of notes of each Indian curreny note of a given amount.
+/*import java.util.Scanner;
+class Notes
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the total amount :");
+		int amount=sc.nextInt(),count=0;
+		int two_thousand=amount/2000;
+		amount=amount%2000;
+
+		int five_hundred=amount/500;
+		amount=amount%500;
+
+		int two_hundred=amount/200;
+		int amount=amount%200;
+
+		int one_hundred=amount/100;
+		int amount=amount%100;
+
+		int fifty=amount/50;
+		int amount=amount%50;
+
+		int twenty=amount/20;
+		int amount=amount%20;
+
+		int ten=amount/10;
+		int amount=amount%10;
+
+		int five=amount/5;
+		int amount=amount%5;
+
+		int two=amount/2;
+		int amount=amount%2;
+
+		int one=amount/1;
+
+		System.out.println("two-thousand rupee note :"+two_thousand);
+		System.out.println("five-hundred rupee note :"+five_hundred);
+		System.out.println("two-hundred rupee note :"+two_hundred);
+		System.out.println("one-hundred rupee note :"+one_hundred);
+		System.out.println("fifty rupee note :"+fifty);
+		System.out.println("twenty rupee note :"+twenty);
+		System.out.println("ten rupee note :"+ten);
+		System.out.println("five rupee note :"+five);
+		System.out.println("two rupee note :"+two);
+		System.out.println("one rupee note :"+one);
+		System.out.println("Total no. of notes :"+(two_thousand+five_hundred+two_hundred+one_hundred+fifty+twenty+ten+five+two+one));
+	}
+}*/
+//WAP  to count the total no. of notes in which there is atleast one hundred rupee note is present.
+import java.util.Scanner;
+class Notes
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		int amount=0;
+
+		System.out.println("Enter the total amount :");
+		int Amount=sc.nextInt(),count=0,one_hundred=0;
+		if(Amount>100)
+						{
+							amount=Amount-100;
+							one_hundred=1;
+						}
+			else
+						amount=Amount;
+
+		int two_thousand=amount/2000;
+		amount=amount%2000;
+
+		int five_hundred=amount/500;
+		amount=amount%500;
+
+		int two_hundred=amount/200;
+		amount=amount%200;
+
+	   one_hundred+=amount/100;
+		amount=amount%100;
+
+	    int fifty=amount/50;
+		amount=amount%50;
+
+		int twenty=amount/20;
+		amount=amount%20;
+
+	    int ten=amount/10;
+		amount=amount%10;
+
+	    int five=amount/5;
+		amount=amount%5;
+
+		int two=amount/2;
+		amount=amount%2;
+
+		int one=amount/1;
+
+		System.out.println("two-thousand rupee note :"+two_thousand);
+		System.out.println("five-hundred rupee note :"+five_hundred);
+		System.out.println("two-hundred rupee note :"+two_hundred);
+		System.out.println("one-hundred rupee note :"+one_hundred);
+		System.out.println("fifty rupee note :"+fifty);
+		System.out.println("twenty rupee note :"+twenty);
+		System.out.println("ten rupee note :"+ten);
+		System.out.println("five rupee note :"+five);
+		System.out.println("two rupee note :"+two);
+		System.out.println("one rupee note :"+one);
+		System.out.println("In this program we always get atleast one 100 rs note.");
+		System.out.println("Total no. of notes :"+(two_thousand+five_hundred+two_hundred+one_hundred+fifty+twenty+ten+five+two+one));
+
+	}
+}
