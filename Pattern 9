@@ -1,0 +1,48 @@
+/*
+      *
+     **
+    ***
+   ****
+  *****
+ ******
+  *****
+   ****
+ 	  ***
+	   **
+	    *
+*/
+
+import java.util.Scanner;
+class Pattern8
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter no. of n :");
+		int n=sc.nextInt();
+		for(int i=1;i<=n;i++)
+		{
+			for(int j=1;j<=n+1-i;j++)
+			{
+				System.out.print(" ");
+			}
+			for(int k=1;k<=i;k++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		for(int m=2;m<=n;m++)
+		{
+			for(int i=1;i<=m;i++)
+			{
+				System.out.print(" ");
+			}
+			for(int k=1;k<=n+1-m;k++)
+			{
+			System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+}
