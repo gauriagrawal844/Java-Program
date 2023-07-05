@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class Multiplication
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the no. till where you want multiplication :");
+		int x=sc.nextInt(), m=1;
+		for(int i=1;i<=x;i++)
+		{
+			m=m*i;
+		}
+		System.out.println("Multiplication="+m);
+	}
+}
