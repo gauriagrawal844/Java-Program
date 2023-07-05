@@ -1,0 +1,34 @@
+/*import java.util.Scanner;
+class Pass
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter Marks");
+int Marks=sc.nextInt();
+String R=(Marks>=33&&Marks<=100)?("Pass"):("Fail");
+System.out.println("Result="+R);
+}
+}*/
+import java.util.Scanner;
+class Pass
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter Marks");
+int Marks=sc.nextInt();
+if(Marks>=33&&Marks<=100)
+{
+	System.out.println("Pass");
+}
+else if(Marks>100)
+{
+	System.out.println("Enter valid marks");
+}
+else
+	{
+	System.out.println("Fail");
+	}
+}
+}
