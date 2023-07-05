@@ -1,0 +1,28 @@
+/*
+*****
+ ****
+  ***
+   **
+    *
+
+*/
+import java.util.Scanner;
+class Pattern6
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter no. columns :");
+		int c=sc.nextInt();
+		for(int i=1;i<=c;i++)
+		{
+			for(int j=2;j<=i;j++)
+				System.out.print(" ");
+
+			for(int k=1;k<=c+1-i;k++)
+				System.out.print("*");
+
+			System.out.println();
+
+	}}
+}
