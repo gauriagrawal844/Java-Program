@@ -1,0 +1,47 @@
+import java.util.Scanner;
+class DecimalToBinary
+{
+	public static void main(String arg[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter any decimal no. to convert it into binary :");
+		int x=sc.nextInt();
+		int a[]=new int[16];
+		int d,i,ind;
+
+		ind=0;
+		for( i=x;i>0;i=i/2)
+		{
+		 d=i%2;
+		a[ind]=d;
+		ind++;
+		}
+		System.out.println("Decimal to binary of "+x+" is :");
+		int t;
+		for(i=0;i<ind/2;i++)
+		{
+			t=a[i];
+			a[i]=a[ind-i-1];
+			a[ind-i-1]=t;
+
+		}
+		for(i=0;i<ind;i++)
+		System.out.print(a[i]);
+		System.out.println();
+
+		int m=0;
+		System.out.println("Binary to decimal :");
+		int p=0;
+		for( i=ind-1;i>=0;i--)
+		{m+=a[i]*Math.pow(2,p);
+		p++;
+		}
+		System.out.println(m);
+
+	}
+}
+
+
+
+
+
