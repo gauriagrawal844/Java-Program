@@ -1,0 +1,43 @@
+import java.util.Scanner;
+class HexalToDecimal
+{
+
+
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter any number :");
+		int x=sc.nextInt();
+		int a[]=new int[16];
+		int d,ind=0;
+		for(int i=x;i>0;i=i/16)
+		{
+			d=i%16;
+			a[ind]=d;
+			ind++;
+		}
+		System.out.println("Decimal to Hexal :");
+		for(int i=ind-1;i>=0;i--)
+		{
+		if(a[i]==10)
+		System.out.print('A');
+		else if(a[i]==11)
+		System.out.print('B');
+		else if(a[i]==12)
+		System.out.print('C');
+		else if(a[i]==13)
+		System.out.print('D');
+		else if(a[i]==14)
+		System.out.print('E');
+		else if(a[i]==15)
+		System.out.print('F');
+		else
+		System.out.print(a[i]);
+		}
+		System.out.println();
+		int m=0;
+		for(int i=0;i<ind;i++)
+		m+=a[i]*Math.pow(16,i);
+		System.out.println("Hexal to Decimal :"+m);
+	}
+}
