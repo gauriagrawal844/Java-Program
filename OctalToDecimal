@@ -1,0 +1,30 @@
+import java.util.Scanner;
+class OctalToDecimal
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter any Number : ");
+		int x=sc.nextInt();
+		int a[]=new int[16];
+		int d,ind=0;
+		for(int i=x;i>0;i=i/8)
+		{
+			d=i%8;
+			a[ind]=d;
+			ind++;
+		}
+		System.out.println("Decimal to octal : ");
+		for(int i=ind;i>=0;i--)
+		System.out.print(a[i]);
+		System.out.println();
+
+		System.out.println("octal to decimal :");
+		int m=0;
+		for(int i=0;i<ind;i++)
+		m+=a[i]*Math.pow(8,i);
+
+		System.out.println(m);
+	}
+}
+
