@@ -1,0 +1,54 @@
+import java.util.Scanner;
+class OctalToBinary
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a no. in octal :");
+		int x=sc.nextInt();
+		int d;
+		boolean Notvalid=false;
+		int b[]=new int[32];
+		int ind=0,count=0,e,c=1,n;
+		int a[][]={{0,0,0},{0,0,1},{0,1,0},{0,1,1},{1,0,0},{1,0,1},{1,1,0},{1,1,1}};
+		for(int i=x;i>0;i=i/10)
+		{
+			n=i%10;
+			if(n>7)
+				Notvalid=true;
+		}
+
+		if(Notvalid==true)
+				System.out.println("Enter a valid octal no.");
+		else
+		{
+				for(int j=x;j>0;j=j/10)
+				{
+					e=j%10;
+					count++;
+				}
+
+				for(int k=1;k<count;k++)
+				c=c*10;
+
+				for(int l=x;l>0;)
+				{
+					d=l/c;
+					l=l%c;
+					l=l*10;
+						for(int m=0;m<3;m++)
+						{
+						b[ind]=a[d][m];
+						ind++;
+						}
+				}
+
+			  System.out.print("Binary : ");
+
+			  for(int p=0;p<ind;p++)
+			  System.out.print(b[p]);
+		}
+
+	}
+}
+
