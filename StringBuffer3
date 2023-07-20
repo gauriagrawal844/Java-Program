@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class StringBuffer3
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter ful Name :");
+		StringBuffer sb=new StringBuffer(sc.nextLine());
+		int sp=sb.lastIndexOf(" ");
+		int l=sb.length();
+		sb.delete(sp,l);
+		System.out.println(sb);
+
+
+	}
+}
