@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class StringBuffer4
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Full Name :");
+		StringBuffer sb=new StringBuffer(sc.nextLine());
+		int s=sb.indexOf(" ");
+		int l=sb.lastIndexOf(" ");
+
+
+		System.out.println(sb.substring(s+1,l));
+	}
+}
