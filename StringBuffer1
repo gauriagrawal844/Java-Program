@@ -1,0 +1,43 @@
+import java.util.Scanner;
+class StringBuffer1
+{
+	public static void main(String args[])
+	{
+
+		Scanner sc=new Scanner(System.in);
+
+
+		System.out.println("Enter First Name :");
+		StringBuffer sb= new StringBuffer(sc.nextLine());
+		System.out.println("Enter Last Name :");
+		sb.append(" ");
+		StringBuffer Last=new StringBuffer(sc.nextLine());
+		sb.append(Last);
+		System.out.println("Full Name :");
+		System.out.println(sb);
+
+
+	}
+
+
+}
+/*
+import java.io.*;
+class StringBuffer1
+{
+	public static void main(String args[])throws IOException
+	{
+		InputStreamReader ir= new InputStreamReader(System.in);
+		BufferedReader br=new BufferedReader(ir);
+
+		System.out.println("Enter Name :");
+		StringBuffer Name=new StringBuffer(br.readLine());
+
+		System.out.println("A Name : "+Name);
+
+
+	}
+
+}
+*/
+
