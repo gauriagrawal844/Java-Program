@@ -1,0 +1,41 @@
+import java.util.Scanner;
+class StringBuffer5
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a String :");
+		StringBuffer sb=new StringBuffer(sc.nextLine());
+		int Nc=sb.length();
+		int Ns=0;
+		int NU=0;
+		int Nl=0;
+		int Nd=0;
+		int Nsp=0;
+		char ch;
+		for(int i=0;i<sb.length();i++)
+		{
+			ch=sb.charAt(i);
+			if(ch==' ')
+			Ns++;
+			else if(ch>='A'&&ch<='Z')
+			NU++;
+			else if(ch>='a'&&ch<='z')
+			Nl++;
+			else if(ch>='0'&&ch<='9')
+			Nd++;
+			else
+			Nsp++;
+		}
+		System.out.println("No. of characters  in string : "+Nc);
+		System.out.println("No. of Spaces  in string : "+Ns);
+		System.out.println("No. of UpperCase characters  in string : "+NU);
+		System.out.println("No. of LowerCase characters  in string : "+Nl);
+		System.out.println("No. of digits  in string : "+Nd);
+		System.out.println("No. of Special characters  in string : "+Nsp);
+
+	}
+}
+
+
+
