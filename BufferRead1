@@ -1,0 +1,35 @@
+import java.io.*;
+
+
+
+  class BufferRead1
+  {
+	  public static void main(String args[])throws IOException
+	  {
+		  InputStreamReader ir= new InputStreamReader(System.in);
+		  BufferedReader br=new BufferedReader(ir);
+
+		  /*
+		  		read()  	:  Read a Char
+		  		readLine()	:  Read a Line
+
+		  */
+
+			/*
+			  System.out.println("Enter A Char : ");
+			  char ch=(char) br.read();
+			  System.out.println(" A Char : "+ch);
+			*/
+
+			  System.out.println("Enter A Name : ");
+			  StringBuffer Name=new StringBuffer(br.readLine());
+			  System.out.println("A Name : "+Name);
+
+
+
+
+	  }
+
+
+
+  }
