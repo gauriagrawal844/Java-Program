@@ -1,0 +1,88 @@
+import java.util.*;
+//  static variables and Methods
+/*
+	static variable :
+
+		* it is also called class variable
+		* only Single Copy Created for All Objects
+		* All Object Share this Copy
+		* static variable can be Access using Its Class name
+
+   static Methods:
+	 	* static Methods can be Access using Its Class name
+   	 	* Static Method Can Access only Other static Members of Its Class
+		* static Method can not Access Non- static Method.
+
+	Note :  a Non-static Method Can access Static and Non-ststic Methods
+
+
+*/
+
+class Bank
+{
+
+    int acno;
+    String name;
+	String type;
+    double bal;
+
+  static double Tbal;
+    Bank()
+    {	acno=0;
+		name="-";
+		type="-";
+		bal=0.0;
+	}
+
+	Bank(int A,String N,String T,double B)
+	{
+		acno=A;
+		name=N;
+		type=T;
+		bal=B;
+	Tbal+=bal;
+	}
+
+	void show()
+	{
+		System.out.println("Account No  	: "+acno);
+		System.out.println("Account Name	: "+name);
+		System.out.println("Account Type	: "+type);
+		System.out.println("Account balance	: "+bal);
+
+	}
+
+
+static void showTotal()
+{
+
+	System.out.println("Total Bal in Bank   : "+Tbal);
+}
+
+
+
+}
+
+
+
+
+
+ class TestStaticVM
+ {
+
+	public static void main(String args[])
+	{
+	  Bank b1=new Bank(101,"Ram","S",3000.0);
+	  Bank b2=new Bank(102,"Raj","S",6000.0);
+
+	 b1.show();
+	 b2.show();
+
+	Bank.showTotal();
+
+
+
+	}
+
+
+ }
