@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class CelsiusToFharaniteByMethod
+{
+
+	static double CelsiusToFheranite(double c)
+	{
+		double f;
+
+
+		f=(c*9/5)+32;
+		return f;
+
+
+	}
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Temperature in celsius:");
+		double c=sc.nextInt();
+
+		System.out.println("Temperature in feranite : "+ CelsiusToFheranite(c));
+	}
+}
+
+
