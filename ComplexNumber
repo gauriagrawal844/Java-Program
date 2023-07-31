@@ -1,0 +1,109 @@
+import java.util.Scanner;
+class Complex
+{
+	private double real;
+	private double imaginary;
+
+	void input()
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter real number : ");
+		real=sc.nextInt();
+		System.out.println("Enter Imaginary number : ");
+		imaginary =sc.nextInt();
+	}
+	void show()
+	{
+		if(imaginary>0)
+		System.out.println(real+"+"+imaginary+"i");
+		else
+		System.out.println(real+""+imaginary+"i");
+	}
+
+
+	Complex add(Complex c2)
+	{
+
+		Complex c3=new Complex();
+
+		c3.real=real+c2.real;
+		c3.imaginary=imaginary+c2.imaginary;
+		System.out.println("Addition :");
+
+		return c3;
+	}
+	Complex sub(Complex c2)
+	{
+		Complex c4=new Complex();
+
+		c4.real=real-c2.real;
+		c4.imaginary=imaginary-c2.imaginary;
+		System.out.println("Subtraction :");
+		return c4;
+	}
+	Complex multi(Complex c2)
+	{
+		Complex c3=new Complex();
+		c3.real=real*c2.real-imaginary*c2.imaginary;
+		c3.imaginary=imaginary*c2.real+real*c2.imaginary;
+		System.out.println("Multiplication : ");
+		return c3;
+	}
+	Complex divide(Complex c2)
+		{
+			Complex c3=new Complex();
+			c3.real=(real*c2.real-imaginary*c2.imaginary)/(c2.real*c2.real+c2.imaginary*c2.imaginary);
+			c3.imaginary=(imaginary*c2.real-real*c2.imaginary)/(c2.real*c2.real+c2.imaginary*c2.imaginary);
+			System.out.println("Division : ");
+			return c3;
+	}
+
+}
+class ComplexNumber
+{
+	public static void main(String args[])
+	{
+		Complex c1=new Complex();
+		Complex c2=new Complex();
+		Complex c3=new Complex();
+		Complex c4=new Complex();
+		Complex c5=new Complex();
+		Complex c6=new Complex();
+
+		c1.input();
+		c2.input();
+
+		c3=c1.add(c2);
+
+		c1.show();
+		c2.show();
+		System.out.println("---------------------");
+		c3.show();
+
+
+		System.out.println();
+		c4=c1.sub(c2);
+		c1.show();
+		c2.show();
+		System.out.println("---------------------");
+		c4.show();
+
+		System.out.println();
+		c5=c1.multi(c2);
+		c1.show();
+		c2.show();
+		System.out.println("---------------------");
+		c5.show();
+
+		System.out.println();
+		c6=c1.divide(c2);
+		c1.show();
+		c2.show();
+		System.out.println("---------------------");
+		c6.show();
+
+
+	}
+
+}
+
