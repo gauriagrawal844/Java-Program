@@ -1,0 +1,41 @@
+import java.util.Scanner;
+class AreaByMethodOverloading
+{
+	static double Area(int a)
+	{
+		System.out.println("Area of Square :");
+		double A=a*a;
+		return A;
+
+	}
+	static double Area(int a,int b)
+	{
+		System.out.println("Area of Rectangle :");
+		double A=a*b;
+		return A;
+	}
+	static double Area(double r)
+	{
+		System.out.println("Area of Circle :");
+		double A=3.14*r*r;
+		return A;
+	}
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Side of Square : ");
+		int a=sc.nextInt();
+		System.out.println(Area(a));
+		System.out.println("Enter Length of Rectangle :");
+		int l=sc.nextInt();
+		System.out.println("Enter Breadth of Rectangle :");
+		int b=sc.nextInt();
+		System.out.println(Area(l,b));
+		System.out.println("Enter Radius of Circle :");
+		double r=sc.nextDouble();
+		System.out.println(Area(r));
+
+
+	}
+}
+
