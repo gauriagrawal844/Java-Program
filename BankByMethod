@@ -1,0 +1,68 @@
+import java.util.Scanner;
+class Details
+{
+	private long Acc_no;
+	private String Name;
+	private String Type;
+	private double Balance;
+	private double Deposit=0 ;
+	private double Withdrawl=0;
+
+	void input()
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Name :");
+		Name=sc.nextLine();
+		System.out.println("Enter Account Type :");
+		Type=sc.nextLine();
+		System.out.println("Enter Account number :");
+		Acc_no=sc.nextLong();
+		System.out.println("Enter Account Balance :");
+		Balance=sc.nextDouble();
+	}
+	void show()
+	{
+		System.out.println("Name : "+Name);
+		System.out.println("Account Type : "+Type);
+		System.out.println("Account number : "+Acc_no);
+		System.out.println("Account Balance : "+Balance);
+	}
+	void Deposit(double Amount)
+	{
+
+		Deposit=Balance+Amount;
+		System.out.println("Total Money After Deposit : "+Deposit);
+	}
+	void Withdrawl(double Amount)
+	{
+		if(Balance>Amount)
+		{
+		Withdrawl=Balance-Amount;
+		System.out.println("Total Money After Withdrawl : "+Withdrawl);
+		}
+		else
+		System.out.println("invalid");
+	}
+
+
+}
+class BankByMethod
+{
+	public static void main(String args[])
+	{
+		Details n1= new Details();
+		Scanner sc=new Scanner(System.in);
+
+		n1.input();
+		n1.show();
+		System.out.println("Enter deposit amount : ");
+		double Amount = sc.nextDouble();
+		n1.Deposit(Amount);
+		System.out.println("Enter withdrwal amount : ");
+		double Withdrawl = sc.nextDouble();
+
+		n1.Withdrawl(Withdrawl);
+
+	}
+}
+
