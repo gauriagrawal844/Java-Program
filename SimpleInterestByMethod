@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class SimpleInterestByMethod
+{
+	static double SimpleInterest(double p,double r,int t)
+	{
+	double Si;
+	Si=(p*r*t)/100;
+
+	return Si;
+	}
+
+
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter principle balance :");
+		double p=sc.nextDouble();
+		System.out.println("Enter Annual interest rate percent :");
+		double r=sc.nextDouble();
+		System.out.println("Enter time(in years):");
+		int t=sc.nextInt();
+		double Si=
+		SimpleInterest(p,r,t);
+		System.out.println("Simple Interest :" + Si);
+	}
+}
