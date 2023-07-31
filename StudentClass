@@ -1,0 +1,34 @@
+import java.util.Scanner;
+class Student
+{
+	private int rno;
+	private String Name;
+	private String Course;
+
+	void input()
+		{
+       Scanner sc = new Scanner(System.in);
+       System.out.println("enter the roll number");
+       rno = sc.nextInt();
+       System.out.println("enter the name");
+       Name = sc.nextLine();
+       System.out.println("enter the course");
+       Course = sc.nextLine();
+	}
+	void show()
+	{
+	System.out.println(rno);
+	System.out.println(Name);
+	System.out.println(Course);
+	}
+}
+class TestStudent
+{
+	public static void main (String args [])
+	{
+
+	Student S1 = new Student();
+	 S1.input();
+	 S1.show();
+}
+ }
