@@ -1,0 +1,44 @@
+
+
+
+
+
+  class StringBufferIntro
+  {
+
+public static void main(String args[])
+{
+	String str="Raj";
+	StringBuffer sb=new StringBuffer();
+
+
+//	System.out.println("Capacity  = "+sb.capacity());
+
+	sb.append('A');
+	System.out.println("sb = "+sb);
+
+	char data[]={'@','#','$','%','^','&','*','0','1','2','3','4','5','6','7','8','9'};
+//	sb.append(data);
+//	sb.append(data,7,4);
+//	sb.append("ABCDEFGH",3,5);
+//	System.out.println("sb = "+sb);
+
+	StringBuffer sb1=new StringBuffer("0123456789");
+	char d[]={'A','B','C','D','E','F','G'};
+	System.out.println("sb = "+sb1);
+	//sb1.delete(3,4	);
+	//sb1.deleteCharAt(3);
+	//System.out.println("sb = "+sb1);
+	//sb1.getChars(3,7,d,3);
+//	String st=new String(d);
+//	System.out.println("sb = "+st);
+
+	//sb1.insert(3,'#');
+	//sb1.insert(3,d);
+	//  sb1.insert(3,d,2,3);
+	//sb1.replace(3,7,"#");
+	System.out.println("sb = "+sb1.reverse());
+
+
+}
+  }
