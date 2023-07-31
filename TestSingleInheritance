@@ -1,0 +1,68 @@
+import java.util.*;
+
+class Person
+{
+	private String Name;
+	private String Address;
+	private int Age;
+
+	void input()
+		{
+       Scanner sc = new Scanner(System.in);
+
+       System.out.println("enter the name");
+       Name = sc.nextLine();
+       System.out.println("enter the Address ");
+       Address = sc.nextLine();
+	   System.out.println("enter the Age");
+	   Age = sc.nextInt();
+
+	}
+	void show()
+	{
+	System.out.println("Name    : "+Name);
+	System.out.println("Address : "+Address);
+	System.out.println("Age 	: "+Age);
+	}
+
+ }
+
+
+class student extends Person
+{
+	private int Rno;
+	private String Course;
+
+	void InputS()
+	{
+       Scanner sc = new Scanner(System.in);
+	   System.out.println("enter the Roll no :");
+	   Rno = sc.nextInt();
+       input();
+       System.out.println("enter the Course ");
+	   Course = sc.next();
+    }
+
+	void ShowS()
+	{
+		 System.out.println(" Roll no :"+Rno );
+    	 show();
+    	 System.out.println(" Course  :"+Course );
+
+	}
+}
+
+class TestSingleInh
+{
+	public static void main(String args[])
+	{
+
+		student s=new student();
+		s.InputS();
+		s.ShowS();
+
+
+
+	}
+
+}
